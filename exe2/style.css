@@ -10,7 +10,7 @@
 }
 
 .layout {
-    margin: 50px 200px 50px 200px;
+    margin: 50px 200px 50px 190px;
     width: 1140px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,7 +19,7 @@
     display: flex;
 }
 
-.layout__main--image {
+.layout__main__image {
     width: 760px;
     height: 376px;
     background-color: var(--main-color);
@@ -31,7 +31,7 @@
     margin-right: 30px;
 }
 
-.layout__main--doc {
+.layout__main__doc {
     width: 364px;
 }
 
@@ -59,11 +59,11 @@
     justify-content: space-between;
 }
 
-.layout__other--content {
+.layout__other__content {
     width: 364px;
 }
 
-.layout__other--image {
+.layout__other-__mage {
     width: 364px;
     height: 182px;
     font-size: 2.5em;

@@ -55,7 +55,7 @@ a {
     position: relative;
 }
 
-.flyout__hover {
+.flyout--hover {
     width: 300px;
     position: absolute;
     top: 60px;
@@ -65,7 +65,7 @@ a {
     z-index: 1;
 }
 
-.flyout__hover--site {
+.flyout__site--hover {
     border-bottom: 1px dashed #557887;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -73,11 +73,11 @@ a {
     height: 50px;
 }
 
-.flyout:hover .flyout__hover {
+.flyout:hover .flyout--hover {
     display: block;
 }
 
-.flyout__hover--site:hover {
+.flyout__site--hover:hover {
     background-color: var(--hover-color);
 }
 
