@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.season {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+[class^="season__"] {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+[class^="season__"]:hover {
+    z-index: 2;
+}
+
+.season__summer {
+    background: red;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+.season__summer::before {
+    position: absolute;
+    content: "ReactJS";
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    top: 0;
+    left: 100px;
+    display: block;
+}
+
+.season__spring {
+    background: green;
+    top: 20px;
+    left: 20px;
+}
+
+.season__winter {
+    background: blue;
+    top: 40px;
+    left: 40px;
+}
+
+p::first-letter {
+    font-size: 100px;
+    color: red;
+}
