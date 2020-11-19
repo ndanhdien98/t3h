@@ -13,7 +13,7 @@
     font-size: 1em;
     font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
-    margin: 150px 250px;
+    margin: 150px auto;
 }
 
 .card__container {
@@ -31,14 +31,14 @@
     box-shadow: 0 20px 36px 0 rgba(0,0,0,0.2);
 }
 
-.img {
+.card__container__img {
     width: 100%;
     height: 200px;
     border-radius: 4px 4px 0 0;
     margin: 0px;
 }
 
-.content {
+.card__container__content {
     margin: 0px 12px 12px 12px;
     height: 114px;
 }
@@ -57,7 +57,7 @@
     color: #9B9B9B;
 }
 
-.btn {
+.card__container__content__btn {
     border: 1px solid #cccccc;
     background-color: #FFFFFF;
     width: 100%;
@@ -73,7 +73,7 @@
     right: 10px;
 }
 
-.btn:hover {
+.card__container__content__btn:hover {
     cursor: pointer;
     background-color: #cccccc;
     color: #FFFFFF;
