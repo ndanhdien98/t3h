@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.memories {
+    width: 100%;
+    height: 800px;
+    background: #F1F1F1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.8em;
+}
+
+.memories__picture {
+    width: 250px;
+    height: 320px;
+    border: 16px dashed #fff;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.blurry {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:rgba(241, 241, 241, 0.5);
+    z-index: 100;
+}
+
+.memories__picture:hover {
+    transform: rotate(0deg);
+    z-index: 1111;
+}
+
+.memories__picture:hover .blurry {
+    opacity: 0;
+}
+
+.memories__picture img {
+    width: 100%;
+    height: 85%;
+}
+
+.memories__picture__container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.z-index1 {
+    z-index: 1;
+    top: 60px;
+    left: 500px;
+    transform: rotate(0deg);
+}
+
+.z-index2 {
+    z-index: 2;
+    top: 400px;
+    transform: rotate(-8deg);
+}
+
+.z-index3 {
+    z-index: 3;
+    top: 300px;
+    left: 450px;
+    transform: rotate(-8deg);
+}
+
+.z-index4 {
+    z-index: 4;
+    left: 650px;
+    transform: rotate(8deg);
+}
