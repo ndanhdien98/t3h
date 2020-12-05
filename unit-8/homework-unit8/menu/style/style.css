@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #EEEEEE;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #777777;
+}
+
+li:not(:first-child) {
+  border-top: 1px solid #EEEEEE;
+}
+
+.navbar {
+  width: 250px;
+  background: #FFFFFF;
+  margin: 30px 50px;
+}
+
+.navbar .navbar__menu {
+  position: relative;
+}
+
+.navbar .navbar__menu .about {
+  -webkit-box-shadow: 0px -1px 19px -4px #8f898f;
+  box-shadow: 0px -1px 19px -4px #8f898f;
+}
+
+.navbar .navbar__menu .about a {
+  color: #E57D23;
+}
+
+.navbar .navbar__menu .navbar__menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  position: relative;
+  height: 40px;
+}
+
+.navbar .navbar__menu .navbar__menu__link .blog {
+  display: none;
+}
+
+.navbar .navbar__menu .navbar__menu__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .navbar__menu .navbar__menu__link a .navbar__menu__link__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .navbar__menu .navbar__menu__link a .navbar__menu__link__content :nth-of-type(2n+1) {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar .navbar__menu .navbar__menu__link a .navbar__menu__link__content :nth-of-type(2n) {
+  font-size: 12px;
+}
+
+.navbar .navbar__menu .navbar__menu__link a .icon {
+  margin: 0px 10px;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right {
+  position: absolute;
+  left: 250px;
+  top: 0px;
+  background: #FFFFFF;
+  width: 250px;
+  display: none;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link:hover {
+  -webkit-box-shadow: 0px -1px 19px -4px #8f898f;
+  box-shadow: 0px -1px 19px -4px #8f898f;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link:hover > a {
+  color: #E57D23;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__drop {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__drop .menu__right__link__drop__staff {
+  display: none;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__drop:hover {
+  -webkit-box-shadow: 0px -1px 19px -4px #8f898f;
+  box-shadow: 0px -1px 19px -4px #8f898f;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__drop:hover > a {
+  color: #E57D23;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__drop:hover .menu__right__link__drop__staff {
+  display: block;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__dropdown__chief .menu__right__link__drop__chief {
+  display: none;
+}
+
+.navbar .navbar__menu .navbar__menu__link .menu__right .menu__right__link__dropdown__chief:hover .menu__right__link__drop__chief {
+  display: block;
+}
+
+.navbar .navbar__menu .navbar__menu__link input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #EEEEEE;
+  margin: 10px 0px 10px 10px;
+}
+
+.navbar .navbar__menu .navbar__menu__link .searchbtn {
+  width: 40px;
+  height: 40px;
+  background: #E57D23;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar__menu .navbar__menu__link .searchbtn i {
+  color: #FFFFFF;
+}
+
+.navbar .navbar__menu .navbar__menu__link:hover {
+  -webkit-box-shadow: 0px -1px 19px -4px #8f898f;
+  box-shadow: 0px -1px 19px -4px #8f898f;
+}
+
+.navbar .navbar__menu .navbar__menu__link:hover > a {
+  color: #E57D23;
+}
+
+.navbar .navbar__menu .navbar__menu__link:hover .blog {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
