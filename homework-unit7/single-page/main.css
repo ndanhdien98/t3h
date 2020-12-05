@@ -158,13 +158,13 @@ a:hover {
     color: #fddc7b;
 }
 
-.conten_services {
+.content_services {
     margin-top: 30px;
     margin-left: 10px;
     padding: 30px;
 }
 
-.conten_services h5 {
+.content_services h5 {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
@@ -397,7 +397,7 @@ a:hover {
         padding-bottom: 20px ;
     }
 
-    .conten_services.border_left {
+    .content_services.border_left {
         border-left: none;
         border-top:1px solid #ccc;
     }
@@ -407,16 +407,7 @@ a:hover {
         padding-top: 20px;
     }
 
-    .menu:nth-child(1) {
+    .menu:nth-child(n):not(:last-child) {
         border-bottom: 1px solid #ccc;
-        border-right: 1px solid #ccc;
-    }
-
-    .menu:nth-child(2) {
-        border-bottom: 1px solid #ccc; 
-    }
-
-    .menu:nth-child(3) {
-        border-right: 1px solid #ccc;
     }
 }
