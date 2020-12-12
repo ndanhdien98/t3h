@@ -1,22 +1,22 @@
 // Exercise 1
-const getMultiplyBoard = (number) => {
-  document.write('In bang nhan:')
-  document.write('<br />')
+const getMultiplyBoard = number => {
+  console.log('In bang nhan:')
+  // console.log('<br />')
 
   for (let i = 1; i <= 10; i++) {
-    document.write(number +' x ' + i + ' = ' + number*i)
-    document.write('<br />')
+    console.log(`${number} x + ${i} = ${number * i}`)
+    // console.log('<br />')
   }
 }
 
 // Exercise 2
-const getEvenNumber = (n) => {
+const getEvenNumber = n => {
   if ((n < 1 || n > 30 ) && typeof (n) != integer) {
     console.log('Number invalid')
   }
 
   for (let i = 1; i <= n; i++) {
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
       console.log(i)
     }
   }
@@ -24,7 +24,7 @@ const getEvenNumber = (n) => {
 
 
 // Exercise 3
-const getsum = (n) => {
+const getsum = n => {
   if ((n < 1 || n > 30 ) && typeof (n) != integer) {
     console.log('Number invalid')
   }
@@ -37,7 +37,7 @@ const getsum = (n) => {
 }
 
 // Exercise 4
-const getFactorialNumber = (n) => {
+const getFactorialNumber = n => {
   if ((n < 1 || n > 30 ) && typeof (n) != integer) {
     console.log('Number invalid')
   }
@@ -50,7 +50,7 @@ const getFactorialNumber = (n) => {
 }
 
 // Exercise 5
-const countEvenNumber = (params) => {
+const countEvenNumber = params => {
   let evenNumber = 0
   for (let i = 0; i <= params.length; i++) {
     if (params[i] % 2 === 0) {
@@ -61,7 +61,7 @@ const countEvenNumber = (params) => {
 }
 
 // Exercise 6
-const deleteDuplicates = (params) => {
+const deleteDuplicates = params => {
   let paramElement
   for (let i = 0; i <= params.length; i++) {
     paramElement = params[i]
@@ -98,7 +98,7 @@ function makeStudentsObject() {
   const students = []
 
   studentNames.forEach(studentName => {
-    let student = {
+    const student = {
       id: studentName.id,
       name: studentName.name
     }
@@ -138,7 +138,7 @@ const getBestAndWorstStudents = () => {
     }
   })
   return {
-    theBest: students.find (student => student.score === best_score),
-    theBad: students.find (student => student.score === worst_score)
+    theBest: students.find(student => student.score === best_score),
+    theBad: students.find(student => student.score === worst_score)
   }
 }
